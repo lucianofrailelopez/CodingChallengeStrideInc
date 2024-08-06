@@ -9,7 +9,7 @@ const Card = ({ data, post }: { data: User, post: Post }) => {
             <div>
                 <div className='flex flex-wrap items-baseline'>
                     <p className='ml-2 text-[#fff] text-l'>{data.first_name}</p>
-                    <p className='ml-1 text-[#bdc5cdd7] text-sm'>{data.username}</p>
+                    <p className='ml-1 text-[#bdc5cdd7] text-sm'>@{data.username}</p>
                     <p className='ml-2 text-[#bdc5cdd7] text-sm'>{date.toLocaleString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}</p>
                 </div>
                 <p className='ml-2 text-[#fff]'>{post.message}</p>

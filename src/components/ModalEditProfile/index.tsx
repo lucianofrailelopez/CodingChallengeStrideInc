@@ -1,20 +1,58 @@
 import { TextField } from "@mui/material";
 import { useForm } from "react-hook-form";
-import Image from "next/image";
+import { joiResolver } from "@hookform/resolvers/joi";
+import { editProfileSchema } from "@/validations/users";
 
 const Modal = ({
     toggleModalOpen,
-    photo_url,
-    name,
+    profile_image,
+    first_name,
+    last_name,
+    username,
 }: {
-    photo_url: string;
-    name: string;
+    profile_image: string;
+    first_name: string;
+    last_name: string;
+    username: string;
     toggleModalOpen: () => void;
 }) => {
     const {
         register,
+        setValue,
         formState: { errors },
-    } = useForm();
+    } = useForm(
+        {
+            mode: "onChange",
+            resolver: joiResolver(editProfileSchema),
+        }
+    );
+
+    setValue("first_name", first_name);
+    setValue("last_name", last_name);
+    setValue("username", username);
+    setValue("profile_image", profile_image);
+
+    const styled = {
+        position: 'relative',
+        "& .MuiOutlinedInput-root": {
+            "& fieldset": {
+                borderColor: "white",
+            },
+            "&:hover fieldset": {
+                borderColor: "white",
+            },
+        },
+        "& .MuiInputLabel-root": {
+            color: "white",
+        },
+        "& .MuiInputBase-input": {
+            color: "white",
+        },
+        "& .MuiFormHelperText-root": {
+            position: 'absolute',
+            bottom: '-20px',
+        }
+    }
 
     return (
         <div className="fixed top-0 left-0 right-0 bottom-0 z-50 bg-gray-500 bg-opacity-50 flex justify-center items-center">
@@ -33,15 +71,8 @@ const Modal = ({
                         Save
                     </button>
                 </div>
-                <Image
-                    src={photo_url}
-                    alt="profile picture"
-                    width={90}
-                    height={90}
-                    className="rounded-full"
-                />
                 <TextField
-                    label="Name"
+                    label="First Name"
                     variant="outlined"
                     fullWidth
                     {...register("first_name")}
@@ -49,94 +80,34 @@ const Modal = ({
                     helperText={
                         errors.first_name ? String(errors.first_name.message) : ""
                     }
-                    sx={{
-                        "& .MuiOutlinedInput-root": {
-                            "& fieldset": {
-                                borderColor: "white",
-                            },
-                            "&:hover fieldset": {
-                                borderColor: "white",
-                            },
-                        },
-                        "& .MuiInputLabel-root": {
-                            color: "white",
-                        },
-                        "& .MuiInputBase-input": {
-                            color: "white",
-                        },
-                    }}
+                    sx={styled}
                 />
                 <TextField
-                    label="Bio"
+                    label="Last Name"
                     variant="outlined"
                     fullWidth
-                    {...register("bio")}
-                    error={!!errors.bio}
-                    helperText={errors.bio ? String(errors.bio.message) : ""}
-                    sx={{
-                        "& .MuiOutlinedInput-root": {
-                            "& fieldset": {
-                                borderColor: "white",
-                            },
-                            "&:hover fieldset": {
-                                borderColor: "white",
-                            },
-                        },
-                        "& .MuiInputLabel-root": {
-                            color: "white",
-                        },
-                        "& .MuiInputBase-input": {
-                            color: "white",
-                        },
-                    }}
+                    {...register("last_name")}
+                    error={!!errors.last_name}
+                    helperText={errors.last_name ? String(errors.last_name.message) : ""}
+                    sx={styled}
                 />
                 <TextField
-                    label="Location"
+                    label="Username"
                     variant="outlined"
                     fullWidth
-                    {...register("location")}
-                    error={!!errors.location}
-                    helperText={errors.location ? String(errors.location.message) : ""}
-                    sx={{
-                        "& .MuiOutlinedInput-root": {
-                            "& fieldset": {
-                                borderColor: "white",
-                            },
-                            "&:hover fieldset": {
-                                borderColor: "white",
-                            },
-                        },
-                        "& .MuiInputLabel-root": {
-                            color: "white",
-                        },
-                        "& .MuiInputBase-input": {
-                            color: "white",
-                        },
-                    }}
+                    {...register("username")}
+                    error={!!errors.username}
+                    helperText={errors.username ? String(errors.username.message) : ""}
+                    sx={styled}
                 />
                 <TextField
-                    label="Web"
+                    label="Image URL"
                     variant="outlined"
                     fullWidth
-                    {...register("web")}
-                    error={!!errors.web}
-                    helperText={errors.web ? String(errors.web.message) : ""}
-                    sx={{
-                        "& .MuiOutlinedInput-root": {
-                            "& fieldset": {
-                                borderColor: "white",
-                            },
-                            "&:hover fieldset": {
-                                borderColor: "white",
-                            },
-                        },
-                        "& .MuiInputLabel-root": {
-                            color: "white",
-                        },
-                        "& .MuiInputBase-input": {
-                            color: "white",
-                        },
-                    }}
+                    {...register("profile_image")}
+                    error={!!errors.profile_image}
+                    helperText={errors.profile_image ? String(errors.profile_image.message) : ""}
+                    sx={styled}
                 />
             </div>
         </div>

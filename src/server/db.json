@@ -46,7 +46,9 @@
       "email": "lucianofrailee@gmail.com",
       "password": "$2a$10$fVKn0gsgKKvHifGIeia7PuMTf71MIGcrJiIs6aJj4SSBIXUB.31UG",
       "profile_image": "https://gravatar.com/avatar/27205e5c51cb03f862138b22bcb5dc20f94a342e744ff6df1b8dc8af3c865109?s=200",
-      "following": ["bb00d2a7-6dfa-49f6-b421-28258c75c804"],
+      "following": [
+        "bb00d2a7-6dfa-49f6-b421-28258c75c804"
+      ],
       "followers": [
         "bb00d2a7-6dfa-49f6-b421-28258c75c804",
         "d52d98d9-453c-4aa9-a58f-2633ddfcf504"
@@ -59,8 +61,36 @@
         {
           "message": "Post Message 2 from Luciano Lopez",
           "createdAt": "2024-04-23T18:25:43.511Z"
+        },
+        {
+          "message": "Post Message 3 from Luciano Lopez",
+          "createdAt": "2024-04-24T18:25:43.511Z"
         }
       ]
+    },
+    {
+      "id": "f0c15fd0-9a84-41ed-96a5-22bdbc939528",
+      "first_name": "Luciano",
+      "last_name": "Fraile Lopez",
+      "username": "lucianofrailelopez",
+      "email": "lucianofraile@gmail.com",
+      "password": "$2a$10$mPYh7c45fJ2obAv.jumiQ.FJbmhP82m3aq/MS0YWSloy6DMhF295W",
+      "profile_image": "",
+      "following": [],
+      "followers": [],
+      "posts": []
+    },
+    {
+      "id": "4c8ddd51-729e-4b1d-9e01-533de6776040",
+      "first_name": "Luciano",
+      "last_name": "Fraile Lopez",
+      "username": "lucianojose",
+      "email": "lucianojose@gmail.com",
+      "password": "$2a$10$4CfvhqOqpn8..uM6K5nTfuenyMQDrdO6UQWqyZJDGjC.Brvjig01.",
+      "profile_image": "",
+      "following": [],
+      "followers": [],
+      "posts": []
     }
   ]
 }

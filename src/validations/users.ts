@@ -89,3 +89,14 @@ export const signupSchema = Joi.object({
             'any.required': 'Repeat password is required',
         }),
 });
+
+export const editProfileSchema = Joi.object({
+    first_name: userSchema.extract('first_name'),
+    last_name: userSchema.extract('last_name'),
+    username: userSchema.extract('username'),
+    profile_image: Joi.string().pattern(/^(http|https):\/\/.+/).messages({
+        'string.pattern.base': 'Profile image must have a valid format',
+        'any.required': 'Profile image is required',
+        'string.empty': 'Profile image is not allowed to be empty',
+    }),
+});

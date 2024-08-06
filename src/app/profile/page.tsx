@@ -43,14 +43,16 @@ const Profile = () => {
     }, [userData.id]);
 
     return (
-        <div className="flex">
-            {/* {isModalOpen && (
+        <div className="md:flex">
+            {isModalOpen && (
                 <Modal
                     toggleModalOpen={toggleModalOpen}
-                    photo_url={user.avatar}
-                    name={user.name}
+                    profile_image={userData.profile_image}
+                    first_name={userData.first_name}
+                    last_name={userData.last_name}
+                    username={userData.username}
                 />
-            )} */}
+            )}
             <ProfileComponent user={userData} unfollowersUser={unfollowersUser} toggleModalOpen={toggleModalOpen} />
         </div>
     );

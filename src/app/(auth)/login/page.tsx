@@ -18,7 +18,6 @@ import { loginData, ToastStyle } from "@/utils/types";
 import { Toast } from "@/components/toast";
 import Visibility from "@mui/icons-material/Visibility";
 import VisibilityOff from "@mui/icons-material/VisibilityOff";
-import { log } from "console";
 
 const Login = () => {
     const {
