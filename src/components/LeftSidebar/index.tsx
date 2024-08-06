@@ -15,8 +15,6 @@ const LeftSidebar = ({ user }: { user: User }) => {
     };
 
     const handleLogout = () => {
-        localStorage.removeItem("authToken");
-        localStorage.removeItem("user");
         fetch("/api/auth/logout", {
             method: "POST",
             headers: { "Content-Type": "application/json" },

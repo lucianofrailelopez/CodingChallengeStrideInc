@@ -56,7 +56,10 @@
       "id": "71a22ee7-fbf6-490a-bd8f-b7803b8cabaa",
       "email": "lucianofrailee@gmail.com",
       "password": "$2a$10$fVKn0gsgKKvHifGIeia7PuMTf71MIGcrJiIs6aJj4SSBIXUB.31UG",
-      "following": ["bb00d2a7-6dfa-49f6-b421-28258c75c804"],
+      "following": [
+        "bb00d2a7-6dfa-49f6-b421-28258c75c804",
+        "d52d98d9-453c-4aa9-a58f-2633ddfcf504"
+      ],
       "followers": [
         "bb00d2a7-6dfa-49f6-b421-28258c75c804",
         "d52d98d9-453c-4aa9-a58f-2633ddfcf504"
@@ -78,6 +81,10 @@
         {
           "message": "Post Message 4 from Luciano Lopez",
           "createdAt": "2024-08-06T20:26:18.892Z"
+        },
+        {
+          "message": "Hola mundo",
+          "createdAt": "2024-08-06T21:17:21.036Z"
         }
       ]
     },
