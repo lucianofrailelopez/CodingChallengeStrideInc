@@ -4,9 +4,7 @@ import TwitterIcon from '@mui/icons-material/Twitter';
 import { User } from '@/utils/types';
 import HomeIcon from '@mui/icons-material/Home';
 import { useRouter, usePathname } from 'next/navigation';
-import Person2OutlinedIcon from '@mui/icons-material/Person2Outlined';
 import HomeOutlinedIcon from '@mui/icons-material/HomeOutlined';
-import PersonIcon from '@mui/icons-material/Person';
 import LogoutIcon from '@mui/icons-material/Logout';
 
 const LeftSidebar = ({ user }: { user: User }) => {
@@ -36,8 +34,8 @@ const LeftSidebar = ({ user }: { user: User }) => {
                     <LogoutIcon sx={{ color: '#fff', width: 35, height: 35 }} />
                     <p className='hidden md:block text-[#fff] text-xl ml-2' >Logout</p>
                 </div>
-                <div className='flex items-end cursor-pointer md:mt-[20px]' onClick={() => handleHomeClick('/')}>
-                    {pathName === '/' ? <HomeIcon sx={{ color: '#fff', width: 40, height: 40 }} /> : <HomeOutlinedIcon sx={{ color: '#fff', width: 40, height: 40 }} />}
+                <div className='flex items-end cursor-pointer md:mt-[20px]' onClick={() => handleHomeClick('/home')}>
+                    {pathName === '/home' ? <HomeIcon sx={{ color: '#fff', width: 40, height: 40 }} /> : <HomeOutlinedIcon sx={{ color: '#fff', width: 40, height: 40 }} />}
                     <p className='hidden md:block text-[#fff] text-xl ml-2'>Home</p>
                 </div>
                 <div className='flex h-[100%] items-end cursor-pointer' onClick={() => handleHomeClick('/profile')}>

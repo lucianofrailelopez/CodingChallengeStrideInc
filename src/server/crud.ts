@@ -79,6 +79,17 @@ function getFollowingPosts(id: string) {
     return posts.sort((a: any, b: any) => new Date(b.createdAt).getTime() - new Date(a.createdAt).getTime());
 }
 
+export function createPost(id: string, post: any) {
+    const data = readData();
+    const user = data.users.find((user: User) => user.id === id);
+    if (user) {
+        user.posts.push(post);
+        writeData(data);
+        return post;
+    }
+    return null;
+}
+
 
 
 const handleUser = {
@@ -87,7 +98,8 @@ const handleUser = {
     getUserById,
     getunfollowedUsers,
     updateUser,
-    getFollowingPosts
+    getFollowingPosts,
+    createPost
 }
 
 export default handleUser;

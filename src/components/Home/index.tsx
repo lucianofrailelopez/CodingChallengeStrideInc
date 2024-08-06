@@ -13,9 +13,6 @@ const HomeComponent = ({ data }: { data: User }) => {
                 {followingPosts?.map((item: User, index: number) => (
                     <Card key={index} data={item} post={item} />
                 ))}
-                {/* <div className='md:hidden'>
-                    <AddPostButton />
-                </div> */}
             </main>
         </>
     );
