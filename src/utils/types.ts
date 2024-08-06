@@ -1,6 +1,20 @@
+export interface UserData {
+    id: number;
+    name: string;
+    userName: string;
+    avatar: string;
+    descriptionTwitter: string;
+    createdAt: Date;
+}
+
 export interface loginData {
     email: string,
     password: string
+}
+
+export interface Post {
+    message: string,
+    createdAt: Date
 }
 
 export interface User {
@@ -10,15 +24,11 @@ export interface User {
     first_name: string,
     last_name: string,
     email: string,
+    following: string[],
+    followers: string[],
+    posts: Post[],
+    profile_image: string,
     password: string
-}
-
-export interface Post {
-    id: number,
-    user_id: number,
-    title: string,
-    content: string,
-    initialDate: string
 }
 
 export interface Following {

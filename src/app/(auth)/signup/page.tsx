@@ -15,7 +15,7 @@ import { useState } from "react";
 
 import { signupSchema } from "@/validations/users";
 import { signupData, ToastStyle } from "@/utils/types";
-import { Toast } from "@/sharedComponents/toast";
+import { Toast } from "@/components/toast";
 
 import Visibility from "@mui/icons-material/Visibility";
 import VisibilityOff from "@mui/icons-material/VisibilityOff";

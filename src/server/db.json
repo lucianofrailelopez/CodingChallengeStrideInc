@@ -1,42 +1,23 @@
 {
   "users": [
     {
-      "id": 1,
-      "first_name": "Carlos",
-      "last_name": "Gomez",
-      "username": "carlosgomez",
-      "email": "carlos.gomez@gmail.com",
-      "password": "123456D!a",
-      "following": [2],
-      "profile_image": "https://gravatar.com/avatar/27205e5c51cb03f862138b22bcb5dc20f94a342e744ff6df1b8dc8af3c865109?s=200"
-    },
-    {
-      "id": 2,
-      "first_name": "Ricardo",
-      "last_name": "Diaz",
-      "username": "ricardodiaz",
-      "email": "ricardo.diaz@gmail.com",
-      "password": "12345678",
-      "following": [],
-      "profile_image": "https://gravatar.com/avatar/27205e5c51cb03f862138b22bcb5dc20f94a342e744ff6df1b8dc8af3c865109?s=200"
-    },
-    {
-      "id": 3,
-      "first_name": "Alberto",
-      "last_name": "Fernandez",
-      "username": "albertofernandez",
-      "email": "alberto.fernandez@gmail.com",
-      "password": "123456",
-      "following": [],
-      "profile_image": "https://gravatar.com/avatar/27205e5c51cb03f862138b22bcb5dc20f94a342e744ff6df1b8dc8af3c865109?s=200"
-    },
-    {
       "id": "bb00d2a7-6dfa-49f6-b421-28258c75c804",
       "first_name": "Carla",
       "last_name": "Conde",
       "username": "carlaconde",
       "email": "carla@gmail.com",
-      "password": "$2a$10$wUggF0HDBU7WrRFUEQW89Og.xoa1uLO/IOkeco1qpZ.d6GK.eOfne"
+      "password": "$2a$10$wUggF0HDBU7WrRFUEQW89Og.xoa1uLO/IOkeco1qpZ.d6GK.eOfne",
+      "profile_image": "https://media.istockphoto.com/id/1386479313/es/foto/feliz-mujer-de-negocios-afroamericana-millennial-posando-aislada-en-blanco.jpg?s=612x612&w=0&k=20&c=JP0NBxlxG2-bdpTRPlTXBbX13zkNj0mR5g1KoOdbtO4=",
+      "posts": [
+        {
+          "message": "Post Message 1 from Carla Conde",
+          "createdAt": "2024-04-20T18:25:43.511Z"
+        },
+        {
+          "message": "Post Message 2 from Carla Conde",
+          "createdAt": "2024-04-22T18:25:43.511Z"
+        }
+      ]
     },
     {
       "id": "d52d98d9-453c-4aa9-a58f-2633ddfcf504",
@@ -44,7 +25,18 @@
       "last_name": "Capussoto",
       "username": "petercapu",
       "email": "peter@gmail.com",
-      "password": "$2a$10$xksPMYNTWCuADSlX7B/9LesMS/aBP6cLW.gqBu.3bsvw3r8hapdT2"
+      "password": "$2a$10$xksPMYNTWCuADSlX7B/9LesMS/aBP6cLW.gqBu.3bsvw3r8hapdT2",
+      "profile_image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBwr_zZjgvmu4BccwDNIHic8K5dyehw7cSYA&s",
+      "posts": [
+        {
+          "message": "Post Message 1 from Peter Capussoto",
+          "createdAt": "2024-04-20T18:25:43.511Z"
+        },
+        {
+          "message": "Post Message 2 from Peter Capussoto",
+          "createdAt": "2024-04-22T18:25:43.511Z"
+        }
+      ]
     },
     {
       "id": "71a22ee7-fbf6-490a-bd8f-b7803b8cabaa",
@@ -52,7 +44,23 @@
       "last_name": "Fraile Lopez",
       "username": "lucianofrailelopez",
       "email": "lucianofrailee@gmail.com",
-      "password": "$2a$10$fVKn0gsgKKvHifGIeia7PuMTf71MIGcrJiIs6aJj4SSBIXUB.31UG"
+      "password": "$2a$10$fVKn0gsgKKvHifGIeia7PuMTf71MIGcrJiIs6aJj4SSBIXUB.31UG",
+      "profile_image": "https://gravatar.com/avatar/27205e5c51cb03f862138b22bcb5dc20f94a342e744ff6df1b8dc8af3c865109?s=200",
+      "following": ["bb00d2a7-6dfa-49f6-b421-28258c75c804"],
+      "followers": [
+        "bb00d2a7-6dfa-49f6-b421-28258c75c804",
+        "d52d98d9-453c-4aa9-a58f-2633ddfcf504"
+      ],
+      "posts": [
+        {
+          "message": "Post Message 1 from Luciano Lopez",
+          "createdAt": "2024-04-21T18:25:43.511Z"
+        },
+        {
+          "message": "Post Message 2 from Luciano Lopez",
+          "createdAt": "2024-04-23T18:25:43.511Z"
+        }
+      ]
     }
   ]
 }

@@ -25,6 +25,10 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
             username,
             email,
             password: hashedPassword,
+            profile_image: '',
+            following: [],
+            followers: [],
+            posts: [],
         };
 
         handleUser.addUser(newUser);

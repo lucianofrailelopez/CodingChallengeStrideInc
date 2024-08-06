@@ -26,9 +26,24 @@ const addUser = (newUser: User) => {
     return newUser
 }
 
+function getUserById(id: string) {
+    const data = readData();
+    return data.users.find((user: User) => user.id === id);
+}
+
+function getunfollowedUsers(id: string) {
+    const user = getUserById(id);
+    if (!user) return [];
+
+    const data = readData();
+    return data.users.filter((u: User) => u.id !== id && !user.following.includes(u.id));
+}
+
 const handleUser = {
     searchByEmail,
-    addUser
+    addUser,
+    getUserById,
+    getunfollowedUsers
 }
 
 export default handleUser;
