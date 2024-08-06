@@ -1,5 +1,5 @@
 import LeftSidebar from "@/components/LeftSidebar";
-import Profile from "@/components/Profile";
+import ProfileComponent from "@/components/Profile";
 import RightSidebar from "@/components/RightSidebar";
 import handleUser from '@/server/crud';
 
@@ -13,7 +13,7 @@ const Profile = () => {
     return (
         <div className="flex flex-col md:flex-row">
             <LeftSidebar user={user} />
-            <Profile user={user} />
+            <ProfileComponent user={user} />
             <RightSidebar id={userId} />
         </div>
     );
