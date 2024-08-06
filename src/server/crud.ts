@@ -90,6 +90,17 @@ export function createPost(id: string, post: any) {
     return null;
 }
 
+export function addFollowing(id: string, followingId: string) {
+    const data = readData();
+    const user = data.users.find((user: User) => user.id === id);
+    if (user) {
+        user.following.push(followingId);
+        writeData(data);
+        return user;
+    }
+    return null;
+}
+
 
 
 const handleUser = {
@@ -99,7 +110,8 @@ const handleUser = {
     getunfollowedUsers,
     updateUser,
     getFollowingPosts,
-    createPost
+    createPost,
+    addFollowing
 }
 
 export default handleUser;

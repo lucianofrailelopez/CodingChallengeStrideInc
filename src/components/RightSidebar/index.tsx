@@ -1,6 +1,6 @@
 import { User } from '@/utils/types';
-import { Avatar, Button } from '@mui/material';
-import { cookies } from 'next/headers';
+import { Avatar } from '@mui/material';
+import FollowButton from '@/components/RightSidebar/FollowButton';
 import handleUser from '@/server/crud';
 
 interface RightSidebarProps {
@@ -10,7 +10,6 @@ interface RightSidebarProps {
 const RightSidebar = async ({ id }: RightSidebarProps) => {
 
     const dataNonFollowers = handleUser.getunfollowedUsers(id)
-
 
     return (
         <aside className='sm:h-[40vh] md:block min-w-[320px] md:h-[100vh] p-8 box-border z-10'>
@@ -26,9 +25,8 @@ const RightSidebar = async ({ id }: RightSidebarProps) => {
                                     <p className='text-[#bdc5cdd7] text-l ml-2 overflow-hidden whitespace-nowrap text-ellipsis max-w-[100px]'>
                                         @{data.username.slice(0, 10)}
                                     </p>
-
                                 </div>
-                                <Button sx={{ borderRadius: 5, fontSize: 10, fontWeight: 700, height: 30, color: '#000', backgroundColor: '#fff' }}>Follow</Button>
+                                <FollowButton userId={id} followingId={data.id} />
                             </div>
                         </div>
                     ))}

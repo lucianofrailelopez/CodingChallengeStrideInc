@@ -57,7 +57,7 @@ const Login = () => {
                 localStorage.setItem("authToken", token);
                 localStorage.setItem("user", JSON.stringify(user));
                 setTimeout(() => {
-                    router.push("/");
+                    router.push("/home");
                 }, 1000);
             }
         } catch (error) {
