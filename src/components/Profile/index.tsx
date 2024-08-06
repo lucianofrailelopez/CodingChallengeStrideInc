@@ -54,7 +54,7 @@ const ProfileComponent = ({ user }: { user: User }) => {
                 </div>
                 <div className='min-w-80 w-9/12 h-1 m-auto mb-0 bg-blue-500'></div>
                 <div>
-                    {user?.posts?.map((data, index) => (
+                    {user?.posts.slice().reverse().map((data, index) => (
                         <Card key={index} data={user} post={data} />
                     ))}
                 </div>

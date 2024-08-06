@@ -50,12 +50,44 @@ function updateUser(user: User) {
     return user;
 }
 
+function getFollowingPosts(id: string) {
+    const user = getUserById(id);
+    if (!user) return [];
+
+    const data = readData();
+    let posts = user.posts.map((post: any) => ({
+        ...post,
+        first_name: user.first_name,
+        last_name: user.last_name,
+        profile_image: user.profile_image,
+        username: user.username
+    }));
+
+    user.following.forEach((followingId: string) => {
+        const followingUser = data.users.find((user: User) => user.id === followingId);
+        if (followingUser) {
+            posts = posts.concat(followingUser.posts.map((post: any) => ({
+                ...post,
+                first_name: followingUser.first_name,
+                last_name: followingUser.last_name,
+                username: followingUser.username,
+                profile_image: followingUser.profile_image,
+            })));
+        }
+    });
+
+    return posts.sort((a: any, b: any) => new Date(b.createdAt).getTime() - new Date(a.createdAt).getTime());
+}
+
+
+
 const handleUser = {
     searchByEmail,
     addUser,
     getUserById,
     getunfollowedUsers,
-    updateUser
+    updateUser,
+    getFollowingPosts
 }
 
 export default handleUser;

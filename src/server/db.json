@@ -19,6 +19,10 @@
         {
           "message": "Post Message 2 from Carla Conde",
           "createdAt": "2024-04-22T18:25:43.511Z"
+        },
+        {
+          "message": "Post Message 3 from Carla Conde",
+          "createdAt": "2024-04-27T18:25:43.511Z"
         }
       ]
     },
@@ -52,9 +56,7 @@
       "id": "71a22ee7-fbf6-490a-bd8f-b7803b8cabaa",
       "email": "lucianofrailee@gmail.com",
       "password": "$2a$10$fVKn0gsgKKvHifGIeia7PuMTf71MIGcrJiIs6aJj4SSBIXUB.31UG",
-      "following": [
-        "bb00d2a7-6dfa-49f6-b421-28258c75c804"
-      ],
+      "following": ["bb00d2a7-6dfa-49f6-b421-28258c75c804"],
       "followers": [
         "bb00d2a7-6dfa-49f6-b421-28258c75c804",
         "d52d98d9-453c-4aa9-a58f-2633ddfcf504"
