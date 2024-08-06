@@ -1,10 +1,9 @@
 import { useState } from "react";
-import { ToastStyle } from "@/utils/types";
+import { User, ToastStyle } from "@/utils/types";
 import { Toast } from "@/components/toast";
-import { set, useForm } from "react-hook-form";
+import { useForm } from "react-hook-form";
 import { joiResolver } from "@hookform/resolvers/joi";
 import { editProfileSchema } from "@/validations/users";
-import { User } from "@/utils/types";
 import { TextField, Button } from "@mui/material";
 
 const Modal = ({

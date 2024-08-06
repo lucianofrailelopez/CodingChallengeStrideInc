@@ -1,9 +1,7 @@
-import { NextApiRequest, NextApiResponse } from 'next';
-import { v4 as uuidv4 } from 'uuid';
 import bcrypt from 'bcryptjs';
 import handleUser from '@/server/crud';
-
 import { User } from '@/utils/types';
+import { v4 as uuidv4 } from 'uuid';
 
 export async function POST(req: Request) {
     const { first_name, last_name, username, email, password } = await req.json();

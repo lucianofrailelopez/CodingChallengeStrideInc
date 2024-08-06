@@ -1,4 +1,3 @@
-import { Description } from '@mui/icons-material';
 import Joi from 'joi';
 
 export const userSchema = Joi.object({

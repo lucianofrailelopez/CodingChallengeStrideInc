@@ -1,9 +1,8 @@
+import { cookies } from 'next/headers';
+import handleUser from '@/server/crud';
 import LeftSidebar from "@/components/LeftSidebar";
 import HomeComponent from "@/components/Home";
 import RightSidebar from "@/components/RightSidebar";
-import handleUser from '@/server/crud';
-
-import { cookies } from 'next/headers';
 
 const Home = () => {
 

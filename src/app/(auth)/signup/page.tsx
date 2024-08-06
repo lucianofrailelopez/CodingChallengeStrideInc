@@ -1,4 +1,12 @@
 "use client";
+import { useState } from "react";
+import Link from "next/link";
+import { useRouter } from "next/navigation";
+import { useForm } from "react-hook-form";
+import { joiResolver } from "@hookform/resolvers/joi";
+import { signupSchema } from "@/validations/users";
+import { signupData, ToastStyle } from "@/utils/types";
+import { Toast } from "@/components/toast";
 import {
     Button,
     TextField,
@@ -7,16 +15,6 @@ import {
     IconButton,
 } from "@mui/material";
 import TwitterIcon from "@mui/icons-material/Twitter";
-import { useForm } from "react-hook-form";
-import { joiResolver } from "@hookform/resolvers/joi";
-import Link from "next/link";
-import { useRouter } from "next/navigation";
-import { useState } from "react";
-
-import { signupSchema } from "@/validations/users";
-import { signupData, ToastStyle } from "@/utils/types";
-import { Toast } from "@/components/toast";
-
 import Visibility from "@mui/icons-material/Visibility";
 import VisibilityOff from "@mui/icons-material/VisibilityOff";
 

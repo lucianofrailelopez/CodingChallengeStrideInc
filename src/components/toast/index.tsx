@@ -1,6 +1,6 @@
-import { Alert, Snackbar, SnackbarCloseReason } from "@mui/material";
-import { ToastProps } from "@/utils/types";
 import { useEffect } from "react";
+import { ToastProps } from "@/utils/types";
+import { Alert, Snackbar, SnackbarCloseReason } from "@mui/material";
 
 export const Toast = ({ open, setOpen, message, type }: ToastProps) => {
     const handleClose = (

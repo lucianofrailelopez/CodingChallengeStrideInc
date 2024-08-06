@@ -1,5 +1,4 @@
 'use client';
-
 import { Button } from '@mui/material';
 type FollowButtonProps = {
     userId: string;

@@ -1,7 +1,7 @@
 import { User } from '@/utils/types';
-import { Avatar } from '@mui/material';
 import FollowButton from '@/components/RightSidebar/FollowButton';
 import handleUser from '@/server/crud';
+import { Avatar } from '@mui/material';
 
 interface RightSidebarProps {
     id: string;

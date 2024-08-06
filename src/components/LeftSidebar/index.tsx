@@ -1,9 +1,9 @@
 'use client';
-import { Avatar } from '@mui/material';
-import TwitterIcon from '@mui/icons-material/Twitter';
 import { User } from '@/utils/types';
-import HomeIcon from '@mui/icons-material/Home';
 import { useRouter, usePathname } from 'next/navigation';
+import { Avatar } from '@mui/material';
+import HomeIcon from '@mui/icons-material/Home';
+import TwitterIcon from '@mui/icons-material/Twitter';
 import HomeOutlinedIcon from '@mui/icons-material/HomeOutlined';
 import LogoutIcon from '@mui/icons-material/Logout';
 

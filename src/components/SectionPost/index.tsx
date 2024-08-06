@@ -1,7 +1,7 @@
 'use client'
 import { useState } from "react";
-import { useForm } from "react-hook-form";
 import { User, ToastStyle } from "@/utils/types";
+import { useForm } from "react-hook-form";
 import { Toast } from "@/components/toast";
 import { TextField, Button, Avatar } from '@mui/material';
 
@@ -14,7 +14,6 @@ const SectionPost = ({ data }: { data: User }) => {
     const {
         register,
         handleSubmit,
-        formState: { errors },
     } = useForm();
 
     const onSubmit = async (dataForm: any) => {

@@ -1,7 +1,7 @@
 import { User } from '@/utils/types';
 import handleUser from '@/server/crud';
 import SectionPost from '../SectionPost';
-import Card from '../Card'
+import Card from '../Card';
 
 const HomeComponent = ({ data }: { data: User }) => {
     const followingPosts = handleUser.getFollowingPosts(data.id);

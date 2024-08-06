@@ -1,4 +1,4 @@
-import { User, Post } from '@/utils/types';
+import { User } from '@/utils/types';
 import { Avatar } from '@mui/material';
 
 const Card = ({ data, post }: { data: User, post: any }) => {

@@ -5,7 +5,6 @@ export async function PUT(request: Request) {
     try {
         const body = await request.json();
 
-
         if (!body) {
             return NextResponse.json({ error: 'User data not found' }, { status: 400 });
         }

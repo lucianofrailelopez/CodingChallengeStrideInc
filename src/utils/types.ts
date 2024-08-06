@@ -1,13 +1,3 @@
-export interface loginData {
-    email: string,
-    password: string
-}
-
-export interface Post {
-    message: string,
-    createdAt: Date
-}
-
 export interface User {
     id: string,
     photo_url?: string,
@@ -23,6 +13,17 @@ export interface User {
     password: string
 }
 
+export interface loginData {
+    email: string,
+    password: string
+}
+
+export interface Post {
+    message: string,
+    createdAt: Date
+}
+
+
 export interface Following {
     id: number,
     user_id: number,
@@ -33,14 +34,6 @@ export interface Followers {
     id: number,
     user_id: number,
     following_user_id: number
-}
-
-export interface UsersState {
-    users: User[];
-}
-
-export interface PostsState {
-    posts: Post[];
 }
 
 export interface signupData {
@@ -62,11 +55,6 @@ export interface ToastProps {
     setOpen: (open: boolean) => void;
     message: string;
     type: "success" | "error" | "warning" | "info" | undefined;
-}
-
-export interface TransitionReturn {
-    isPending: boolean;
-    startTransition: (callback: () => void) => void;
 }
 
 export type ToastStyle = "success" | "error" | "warning" | "info" | undefined;

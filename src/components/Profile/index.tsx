@@ -1,15 +1,14 @@
 'use client';
-import { User } from '@/utils/types';
 import { useState } from "react";
+import { User } from '@/utils/types';
 import Card from '../Card';
-import { Avatar } from '@mui/material';
 import Modal from "@/components/ModalEditProfile";
+import { Avatar } from '@mui/material';
 
 const ProfileComponent = ({ user }: { user: User }) => {
     const [isModalOpen, setIsModalOpen] = useState(false);
 
     const toggleModalOpen = () => {
-        console.log("edit profile");
         setIsModalOpen(!isModalOpen);
     };
 
