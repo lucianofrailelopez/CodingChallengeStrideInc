@@ -1,3 +1,4 @@
+import { Description } from '@mui/icons-material';
 import Joi from 'joi';
 
 export const userSchema = Joi.object({
@@ -94,6 +95,10 @@ export const editProfileSchema = Joi.object({
     first_name: userSchema.extract('first_name'),
     last_name: userSchema.extract('last_name'),
     username: userSchema.extract('username'),
+    description: Joi.string().max(300).messages({
+        'string.max': 'Description cannot be more than 300 chars',
+        'string.empty': 'Description is not allowed to be empty',
+    }),
     profile_image: Joi.string().pattern(/^(http|https):\/\/.+/).messages({
         'string.pattern.base': 'Profile image must have a valid format',
         'any.required': 'Profile image is required',

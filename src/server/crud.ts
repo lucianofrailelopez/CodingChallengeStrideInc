@@ -39,11 +39,23 @@ function getunfollowedUsers(id: string) {
     return data.users.filter((u: User) => u.id !== id && !user.following.includes(u.id));
 }
 
+function updateUser(user: User) {
+    const data = readData();
+    const index = data.users.findIndex((u: User) => u.id === user.id);
+    if (index !== -1) {
+        data.users[index] = user;
+        writeData(data);
+    }
+
+    return user;
+}
+
 const handleUser = {
     searchByEmail,
     addUser,
     getUserById,
-    getunfollowedUsers
+    getunfollowedUsers,
+    updateUser
 }
 
 export default handleUser;

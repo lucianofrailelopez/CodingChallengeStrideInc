@@ -23,7 +23,7 @@ export async function POST(req: Request) {
             { expiresIn: '1h' }
         );
 
-        // cookies().set(email, token);
+        cookies().set('UserId', user.id);
 
         if (!passwordMatch) {
             return new Response(JSON.stringify({ message: 'Incorrect Password' }), {

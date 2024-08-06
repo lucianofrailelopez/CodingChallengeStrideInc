@@ -29,6 +29,7 @@ export async function POST(req: Request) {
         email,
         password: hashedPassword,
         profile_image: '',
+        description: '',
         following: [],
         followers: [],
         posts: [],

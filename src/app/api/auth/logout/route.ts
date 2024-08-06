@@ -1,8 +1,7 @@
 import { cookies } from 'next/headers';
 
 export async function POST(req: Request) {
-    const { email } = await req.json();
-    cookies().delete(email)
+    cookies().delete('UserId');
     return new Response(JSON.stringify({ message: 'Logout successful' }), {
         status: 200,
         headers: {

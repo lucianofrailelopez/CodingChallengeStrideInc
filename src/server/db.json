@@ -7,6 +7,9 @@
       "username": "carlaconde",
       "email": "carla@gmail.com",
       "password": "$2a$10$wUggF0HDBU7WrRFUEQW89Og.xoa1uLO/IOkeco1qpZ.d6GK.eOfne",
+      "following": [],
+      "followers": [],
+      "descripton": "",
       "profile_image": "https://media.istockphoto.com/id/1386479313/es/foto/feliz-mujer-de-negocios-afroamericana-millennial-posando-aislada-en-blanco.jpg?s=612x612&w=0&k=20&c=JP0NBxlxG2-bdpTRPlTXBbX13zkNj0mR5g1KoOdbtO4=",
       "posts": [
         {
@@ -25,6 +28,9 @@
       "last_name": "Capussoto",
       "username": "petercapu",
       "email": "peter@gmail.com",
+      "following": [],
+      "followers": [],
+      "descripton": "",
       "password": "$2a$10$xksPMYNTWCuADSlX7B/9LesMS/aBP6cLW.gqBu.3bsvw3r8hapdT2",
       "profile_image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBwr_zZjgvmu4BccwDNIHic8K5dyehw7cSYA&s",
       "posts": [
@@ -39,13 +45,13 @@
       ]
     },
     {
-      "id": "71a22ee7-fbf6-490a-bd8f-b7803b8cabaa",
       "first_name": "Luciano",
       "last_name": "Fraile Lopez",
       "username": "lucianofrailelopez",
+      "profile_image": "https://gravatar.com/avatar/27205e5c51cb03f862138b22bcb5dc20f94a342e744ff6df1b8dc8af3c865109?s=200",
+      "id": "71a22ee7-fbf6-490a-bd8f-b7803b8cabaa",
       "email": "lucianofrailee@gmail.com",
       "password": "$2a$10$fVKn0gsgKKvHifGIeia7PuMTf71MIGcrJiIs6aJj4SSBIXUB.31UG",
-      "profile_image": "https://gravatar.com/avatar/27205e5c51cb03f862138b22bcb5dc20f94a342e744ff6df1b8dc8af3c865109?s=200",
       "following": [
         "bb00d2a7-6dfa-49f6-b421-28258c75c804"
       ],
@@ -53,6 +59,7 @@
         "bb00d2a7-6dfa-49f6-b421-28258c75c804",
         "d52d98d9-453c-4aa9-a58f-2633ddfcf504"
       ],
+      "description": "Rosario, Santa Fe",
       "posts": [
         {
           "message": "Post Message 1 from Luciano Lopez",
@@ -78,6 +85,7 @@
       "profile_image": "",
       "following": [],
       "followers": [],
+      "descripton": "",
       "posts": []
     },
     {
@@ -90,6 +98,7 @@
       "profile_image": "",
       "following": [],
       "followers": [],
+      "descripton": "",
       "posts": []
     }
   ]
