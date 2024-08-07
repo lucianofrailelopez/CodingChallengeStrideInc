@@ -2,7 +2,6 @@ import Joi from 'joi';
 
 export const userSchema = Joi.object({
     first_name: Joi.string()
-        .min(3)
         .max(20)
         .pattern(/^[a-zA-Z\s]*$/)
         .messages({
@@ -14,7 +13,6 @@ export const userSchema = Joi.object({
             'any.required': 'First name is required',
         }),
     last_name: Joi.string()
-        .min(3)
         .max(20)
         .pattern(/^[a-zA-Z\s]*$/)
         .messages({
@@ -26,7 +24,6 @@ export const userSchema = Joi.object({
             'any.required': 'Last name is required',
         }),
     username: Joi.string()
-        .min(3)
         .max(20)
         .pattern(/^[a-zA-Z0-9]*$/)
         .messages({

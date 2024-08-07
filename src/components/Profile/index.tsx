@@ -36,9 +36,10 @@ const ProfileComponent = ({ user }: { user: User }) => {
                         </button>
                     </div>
                     <div className='flex items-center'>
-                        <span>{user?.first_name}</span>
+                        <span>{user?.first_name} {user?.last_name}</span>
                     </div>
-                    <div className='text-gray-400'>{user?.username}</div>
+                    <div className='text-gray-400'>@{user?.username}</div>
+                    <div className='text-[#fff]-400 mt-2'>{user?.description}</div>
                     <div>
                         <span className='mr-2'>
                             {user?.following.length}

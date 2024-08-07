@@ -49,22 +49,19 @@
       ]
     },
     {
-      "first_name": "Luciano",
+      "first_name": "Lucianno",
       "last_name": "Fraile Lopez",
       "username": "lucianofrailelopez",
       "profile_image": "https://gravatar.com/avatar/27205e5c51cb03f862138b22bcb5dc20f94a342e744ff6df1b8dc8af3c865109?s=200",
       "id": "71a22ee7-fbf6-490a-bd8f-b7803b8cabaa",
       "email": "lucianofrailee@gmail.com",
       "password": "$2a$10$fVKn0gsgKKvHifGIeia7PuMTf71MIGcrJiIs6aJj4SSBIXUB.31UG",
-      "following": [
-        "bb00d2a7-6dfa-49f6-b421-28258c75c804",
-        "d52d98d9-453c-4aa9-a58f-2633ddfcf504"
-      ],
+      "following": ["bb00d2a7-6dfa-49f6-b421-28258c75c804"],
       "followers": [
         "bb00d2a7-6dfa-49f6-b421-28258c75c804",
         "d52d98d9-453c-4aa9-a58f-2633ddfcf504"
       ],
-      "description": "Rosario, Santa Fe",
+      "description": "Rosario, Argentina",
       "posts": [
         {
           "message": "Post Message 1 from Luciano Lopez",
@@ -85,6 +82,10 @@
         {
           "message": "Hola mundo",
           "createdAt": "2024-08-06T21:17:21.036Z"
+        },
+        {
+          "message": "Hola gente de Twitter!",
+          "createdAt": "2024-08-07T00:44:05.454Z"
         }
       ]
     },
